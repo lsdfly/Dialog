@@ -1,0 +1,224 @@
+  * {
+      margin: 0;
+      padding: 0;
+  }
+  
+  .ui-dialog-bgModal {
+      background: #333;
+      visibility: visible;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      z-index: 9998;
+      position: fixed !important;
+  }
+  
+  .ui-dialog-centerWrap {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 9999;
+      width: 100%;
+      height: 100%;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+  }
+  
+  .ui-dialog-centerWrap i {
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+  }
+  
+  .theme-default {
+      background-color: rgb(255, 62, 96);
+      color: rgb(255, 255, 255);
+  }
+  
+  .theme-pc {
+      background-color: #ba2102;
+      color: rgb(255, 255, 255);
+  }
+  
+
+  
+  .ui-dialog {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: inline-block;
+      vertical-align: middle;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      border: 1px solid #ccc;
+      border: 0.02rem solid #ccc;
+      border-radius: 0.08rem;
+      -moz-border-radius: 0.2rem;
+      overflow: hidden;
+  }
+  
+  .ui-dialog .ui-dialog-title {
+      top: 0;
+      position: absolute;
+      width: 100%;
+      font-size: 20px;
+      line-height: 40px;
+      height: 40px;
+      /*支持rem*/
+      font-size: 0.2rem;
+      line-height: 0.4rem;
+      height: 0.4rem;
+  }
+  
+  .ui-dialog .ui-dialog-close {
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      right: 0;
+      text-align: center;
+      line-height: 40px;
+      height: 40px;
+      width: 40px;
+      font-size: 30px;
+      line-height: 0.4rem;
+      height: 0.4rem;
+      width: 0.4rem;
+      font-size: 0.3rem;
+  }
+  
+  .ui-dialog-body {
+      box-sizing: border-box;
+      /*padding: 12px;*/
+      text-align: left;
+      background-color: white;
+      -webkit-overflow-scrolling: touch;
+      word-break: break-all;
+      overflow-y: auto;
+      overflow-x: hidden;
+      word-wrap: break-word;
+      font-size: 12px;
+      font-size: 0.12rem;
+      width: 100%;
+      position: absolute;
+      top: 40px;
+      bottom: 70px;
+      /*padding: 0.24rem;*/
+      top: 0.4rem;
+      bottom: 0.7rem;
+  }
+  
+  .ui-dialog .ui-dialog-footer {
+      background-color: white;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      line-height: 60px;
+      height: 70px;
+      /* padding-top: 20px; */
+      font-size: 20px;
+      /*支持rem*/
+      line-height: 0.6rem;
+      height: 0.7rem;
+      border-bottom-right-radius: 0.2em;
+      border-bottom-left-radius: 0.2em;
+      font-size: 0.2rem;
+  }
+  
+  .no-border {
+      border: 0;
+  }
+  
+  .no-border-radius {
+      border-radius: 0;
+  }
+  
+  .dialog-btn:first-child {
+      margin-left: 0;
+  }
+  
+  .dialog-btn {
+      border-radius: 0.1rem;
+      -moz-border-radius: 0.1rem;
+      height: 40px;
+      line-height: 30px;
+      border: 0;
+      margin-left: 10px;
+      width: 130px;
+      margin-left: 0.1rem;
+      height: 0.4rem;
+      line-height: 0.4rem;
+      width: 1.3rem;
+      font-size: 20px;
+      font-size: 0.2rem;
+  }
+  
+  .pc-dialog .dialog-btn.default {
+      background-color: #ba2102;
+      color: rgb(255, 255, 255);
+      border-radius: 0.1rem;
+      -moz-border-radius: 0.1rem;
+      height: 30px;
+      line-height: 30px;
+      border: 0;
+      margin-left: 10px;
+      margin-top: 15px;
+      width: 110px;
+      font-size: 16px;
+  }
+  
+  .dialog-btn.confirm {
+      background-color: rgb(255, 62, 96);
+      color: rgb(255, 255, 255);
+  }
+  
+  .dialog-btn.cancel {
+      color: rgb(255, 255, 255);
+  }
+  
+  .no-footer .ui-dialog-footer {
+      display: none;
+  }
+  
+  .no-footer .ui-dialog-body {
+      bottom: 0;
+  }
+  
+  .dialog-iframe {
+      height: 100%;
+      -webkit-overflow-scrolling: touch;
+      overflow-y: scroll;
+      width: 100%;
+      min-width: 100%;
+      *width: 100%;
+  }
+  
+  .mulit_line {
+      line-height: 80px;
+      line-height: 0.8rem;
+      padding-left: 5px;
+      padding-left: 0.05rem;
+  }
+  
+  .mulit_line .ui-dialog-body-content {
+      display: -moz-inline-stack;
+      /*display: inline-block;*/
+      line-height: 1.4em;
+      vertical-align: middle;
+  }
+  
+  .mulit_line i {
+      width: 0;
+      display: -moz-inline-stack;
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 0;
+  }
+  /*提示样式*/
+  .pc-dialog._alert .mulit_line {
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+}
