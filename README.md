@@ -25,20 +25,20 @@ controller: null //注入函数
 使用方法  
 -----------------------------------
 ### 初始化
- var d1 = dialog({
-                title: '手机满屏',
-                //  buttons: ["确定", "取消"],buttons可传对象或字符串
-                  buttons: [{type:'',text:'确定'}, {type:'cancel',text:'取消'}],
-                contentUrl: "tp.html",
-                cssUrl: 'css.css',
-                opacity: 50,
-                height: '100%',
-                width: '100%',
-                controllerUrl: 'test.js'
-            });
-            //确定回调,index按钮索引,data回调数据(参照目录下的test.js说明,controller返回值也到data里面)
-            d1.callback = function(index,data) {
-                alert(text)
-                return true;
-            }
+>var d1 = dialog({
+>                title: '手机满屏',
+>                //  buttons: ["确定", "取消"],buttons可传对象或字符串
+>                  buttons: [{type:'',text:'确定'}, {type:'cancel',text:'取消'}],
+>                contentUrl: "tp.html",
+>                cssUrl: 'css.css',
+>                opacity: 50,
+>                height: '100%',
+>                width: '100%',
+>                controllerUrl: 'test.js'
+>           });
+>            //确定回调,index按钮索引,data回调数据(参照目录下的test.js说明,controller返回值也到data里面)
+>            d1.callback = function(index,data) {
+>                alert(text)
+>                return true;
+>            }
 
